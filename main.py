@@ -1,5 +1,6 @@
 import pygame
-from constants import *
+from constants import LENGTH, HEIGHT
+from board import Board
 
 
 # Sets the max fps to 60 so that there is little to no variation to 
@@ -12,6 +13,7 @@ pygame.display.set_caption("Checkers Game")
 def main():
     running = True
     clock = pygame.time.Clock()
+    board = Board()
 
     while running:
 
@@ -24,6 +26,9 @@ def main():
             
             if event .type == pygame.MOUSEBUTTONDOWN:
                 pass
+
+        board.draw_squares(Window)
+        pygame.display.update()
 
     pygame.quit()
 
