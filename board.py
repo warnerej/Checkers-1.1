@@ -11,4 +11,4 @@ class Board:
 
     def draw_squares(self, win):
         win.fill("Black")
-        for row in range
+        #for row in range
